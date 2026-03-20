@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Employee Registration</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  }
+
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #555;
+  }
+
+  input, textarea, select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+
+  textarea {
+    resize: none;
+    height: 80px;
+  }
+
+  .row {
+    display: flex;
+    gap: 15px;
+  }
+
+  .row .form-group {
+    flex: 1;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    background: #4CAF50;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+
+  button:hover {
+    background: #45a049;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h2>Employee Registration Form</h2>
+
+  <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DdL00000r53wS" method="POST">
+
+    <input type="hidden" name="orgid" value="00DdL00000r53wS">
+    <input type="hidden" name="retURL" value="https://raptbot-clone.onrender.com/">
+
+    <div class="row">
+      <div class="form-group">
+        <label>Employee Name</label>
+        <input name="00NdL000024Sarf" type="text" required>
+      </div>
+
+      <div class="form-group">
+        <label>Phone</label>
+        <input name="00NdL000024SVn8" type="text">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="form-group">
+        <label>Birthday</label>
+        <input name="00NdL000024TKMb" type="date">
+      </div>
+
+      <div class="form-group">
+        <label>Day Of Joining</label>
+        <input name="00NdL000024TRW9" type="date">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="form-group">
+        <label>Personal Email</label>
+        <input name="00NdL000024SipC" type="email">
+      </div>
+
+      <div class="form-group">
+        <label>Company Email</label>
+        <input name="00NdL000024Si63" type="email">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Current Address</label>
+      <textarea name="00NdL000024TOOb"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>Permanent Address</label>
+      <textarea name="00NdL000024Sv02"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>Employee Department</label>
+      <select name="00NdL000024TSFJ">
+        <option value="">--Select--</option>
+        <option value="Salesforce">Salesforce</option>
+        <option value="AWS">AWS</option>
+        <option value="Marketing">Marketing</option>
+        <option value="IT">IT</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Total Work Experience</label>
+      <input name="00NdL000024TSs1" type="text">
+    </div>
+
+    <h3>Bank Details</h3>
+
+    <div class="row">
+      <div class="form-group">
+        <label>Account Holder Name</label>
+        <input name="00NdL000024TStd" type="text">
+      </div>
+
+      <div class="form-group">
+        <label>Account Number</label>
+        <input name="00NdL000024TAaA" type="text">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="form-group">
+        <label>Bank Name</label>
+        <input name="00NdL000024Sun8" type="text">
+      </div>
+
+      <div class="form-group">
+        <label>IFSC Code</label>
+        <input name="00NdL000024SoqA" type="text">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Branch Address</label>
+      <input name="00NdL000024SRl9" type="text">
+    </div>
+
+    <h3>Family Details</h3>
+
+    <div class="row">
+      <div class="form-group">
+        <label>Father Name</label>
+        <input name="00NdL000024TZTh" type="text">
+      </div>
+
+      <div class="form-group">
+        <label>Father Phone</label>
+        <input name="00NdL000024TaO9" type="text">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="form-group">
+        <label>Mother Name</label>
+        <input name="00NdL000024TazF" type="text">
+      </div>
+
+      <div class="form-group">
+        <label>Mother Phone</label>
+        <input name="00NdL000024Tc6b" type="text">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="form-group">
+        <label>Aadhar Number</label>
+        <input name="00NdL000024Tw5K" type="text">
+      </div>
+
+      <div class="form-group">
+        <label>PAN Card Number</label>
+        <input name="00NdL000024UakH" type="text">
+      </div>
+    </div>
+
+    <button type="submit">Submit</button>
+
+  </form>
+</div>
+
+</body>
+</html>
